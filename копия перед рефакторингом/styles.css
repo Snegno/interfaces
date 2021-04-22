@@ -1,0 +1,358 @@
+*{
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+*,*:before,*:after{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+a{display: block;}
+/* ================================= */
+.container {
+	border: 3px solid black;
+	max-width: 1170px;
+	height: 700px;
+}
+
+.row_1 {
+	border: 2px solid gray;
+	display: flex;
+	justify-content: space-between;
+}
+.row_1_wrapper {
+	display: flex;
+	justify-content: flex-start;
+	border: 3px solid red;
+}
+ /*Section - 1 ====================== */
+.r_1_piano	{
+	border: 2px solid blue;
+	max-width: 500px;
+	max-height: 220px;
+}
+
+.section_1__main_menu {
+	display: flex;
+	justify-content: flex-start;
+	flex-wrap: wrap;
+	max-width: 305px;
+}
+
+.section_1__list {
+	/*border: 2px solid red;*/
+	margin: 10px 10px;	
+	list-style-type: none;
+}
+
+.section_1__elements {
+	padding-top: 2px;
+	/*border: 1px solid orange;*/
+	max-width: 120px;
+	max-height: 35px;
+}
+
+.section_1__links {
+	text-decoration: none;
+	color: #111;
+	border: 1px solid #111;
+	padding-left: 2px;
+}
+
+.section_1__link_1 {
+	background-color: #FFFEE6;
+	width: 120px;
+	transition: all 1s;
+}
+.section_1_on_1:hover {
+	background-color: #D193FA;
+	transition: all 0.5s;
+	width: 140px;
+	margin-left: 2px;
+	padding-left: 5px;
+}
+
+.section_1__link_2 {
+	background-color: #09E090;
+	width: 120px;
+	transition: all 1s;
+}
+.section_1_on_2:hover {
+	background-color: #E3EB61;
+	transition: all 0.5s;
+	width: 140px;
+	margin-left: 2px;
+	padding-left: 5px;
+}
+
+.section_1__link_3 {
+	background-color: #FFE5ED;
+	width: 120px;
+	transition: all 1s;	
+}
+.section_1_on_3:hover {
+	background-color: #6DFF25;
+	transition: all 0.5s;
+	width: 140px;
+	margin-left: 2px;	
+	padding-left: 5px;
+}
+
+.section_1__link_4 {
+	background-color: #4FF8D8;
+	width: 120px;
+	transition: all 1s;
+}
+.section_1_on_4:hover {
+	background-color: #FF3326;
+	transition: all 0.5s;
+	width: 140px;
+	margin-left: 2px;	
+	padding-left: 5px;
+}
+
+.section_1__link_5 {
+	background-color: #7BD8E3;
+	width: 120px;
+	transition: all 1s;
+}
+.section_1_on_5:hover {
+	background-color: #989FDF;
+	transition: all 0.5s;
+	width: 140px;
+	margin-left: 2px;	
+	padding-left: 5px;
+}
+
+.animation_on__wrapper {
+	width: 130px;
+	height: 100px;
+	/*border: 1px solid green;*/
+	position: relative;
+	margin: 20px 15px;
+}
+.animation_on {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+}
+.animation_on__line {
+	position: absolute;
+	top: 5px;
+	left: 5px;
+	width: 25px;
+	height: 12px;
+	background-color: #FA4747;
+	border-radius: 20%;
+	border: 1px solid black;
+}
+.animation_on__line--active {
+	background-color: #19E047;
+}
+.animation_on__ball {
+	position: absolute;
+	width: 16px;
+	height: 16px;
+	background-color: #FDEFEC;
+	border: 1px solid black;
+	top: 3.2px;
+	left: 5px;
+	border-radius: 50%;
+}
+.animation_on__ball--active {
+	transform: translateX(9px);
+}
+
+.animation__text {
+	position: absolute;
+	top: 0px;
+	left: 45px;
+}
+
+/*Меню Бургер = ==  ============== */
+
+.section_1_field_2 {
+	border: 2px solid blue;
+	max-width: 520px;
+	max-height: 220px;
+}
+
+.section_1_field_2--flex_row {
+	display: flex;
+}
+
+.section_1_field_2__main_menu {
+	margin: 10px 10px;
+/*	border: 1px solid black;*/
+	max-width: 100%;
+}
+ /*Отключает меню*/
+.section_1_field_2__main_menu--off {
+	display: none;
+}
+
+.section_1_field_2__list {
+	list-style: none;
+	display: flex;
+/*	border: 1px solid red;*/
+	margin: 0 auto;
+	flex-wrap: wrap;
+	max-width: 100%;
+}
+.section_1_field_2__elements {
+	border: 1px solid black;
+	margin-right: 5px;
+}
+
+.section_1_field_2__links {
+	text-decoration: none;
+	color: #111;
+	background-color: #E8DC9E;
+}
+
+.section_1_field_2__burger {
+	/*border: 1px solid red;*/
+	width: 45px;
+	height: 45px;
+	position: relative;
+	margin-right: 55px;
+	margin-top: 10px;
+}
+
+.section_1_field_2__burger_lines:before {
+	content: "";
+	width: 35px;
+	height: 3px;
+	top: -10px;
+	position: absolute;
+	background-color: #111;
+}
+.section_1_field_2__burger_lines {
+	width: 35px;
+	height: 3px;
+	background-color: #111;
+	position: absolute;
+	top: 20px;
+	left: 3px;
+}
+.section_1_field_2__burger_lines:after {
+	content: "";
+	width: 35px;
+	height: 3px;
+	top: 10px;
+	position: absolute;
+	background-color: #111;
+}
+
+.section_1_field_2__burger_transform {
+	align-self: flex-end;
+	display: flex;
+	flex-direction: column;
+	margin: 10px 70px 10px 10px;
+}
+.burger__button {
+	margin-bottom: 10px;
+	border: 1px solid black;
+	border-radius: 3.5%;
+	font-size: 15px;
+	padding: 2px;
+	background-color: #E9BC80;
+}
+.no_burger__button {
+	margin-bottom: 10px;
+	border: 1px solid black;
+	border-radius: 3.5%;
+	font-size: 15px;
+	padding: 2px;
+	background-color: #64BEFF;
+}
+/* Показать Вертикальное меню*/
+.section_1_field_2__main_menu--on {
+	display: block;
+	position: relative;
+	margin: 10px 0;
+}
+.section_1_field_2__list--burger {
+	display: flex;
+	flex-direction: column;
+	position: absolute;
+	top: 42px;
+	left: 191px;
+}
+.section_1_field_2__elements--burger {
+	margin-bottom: 1px;
+}
+
+ /* !!!!!!  Кнопка В обычное меню включение/отключение*/
+
+/* прячет бургер*/
+.section_1_field_2__burger--off {
+	display: none;
+}
+.section_1_field_2--column {
+	flex-direction: column;
+	justify-content: space-between;
+}
+.burger_transform--default_position {
+	align-self: flex-start;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*  Секция - 2 */
+
+.section_2	{
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.section_3	{
+
+}

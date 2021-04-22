@@ -1,0 +1,775 @@
+*{
+	padding: 0;
+	margin: 0;
+	border: 0;
+	font-family: "Comic Sans MS";
+}
+*,*:before,*:after{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+a{display: block;}
+ul{ list-style: none; }
+/* ================================= */
+body {
+	background-image: url('img/wall2.jpg');
+	background-repeat: repeat-y;
+	background-position: center;
+	background-size: 100%;
+}
+.container {
+	/*border: 3px solid black;*/
+	max-width: 1350px;
+	height: 700px;
+	margin: 0 auto;
+}
+
+.row_1 {
+	display: flex;
+	justify-content: space-between;
+	/*border: 1px solid rgba(255,255,255,0.7);*/
+	width: 100%;
+	margin: 40px 0;
+}
+
+
+ /* Пианино   ====================== */
+.r_1_piano	{
+	border: 1px solid rgba(255,255,255,0.7);
+	max-width: 500px;
+	max-height: 220px;
+	flex: 0 1 40%;
+}
+
+.piano__main_menu {
+	display: flex;
+	justify-content: flex-start;
+	flex-wrap: wrap;
+	max-width: 305px;
+}
+
+.piano__list {
+	margin: 10px 10px;	
+	list-style-type: none;
+}
+
+.piano__elements {
+	padding-top: 4px;
+	max-width: 130px;
+	max-height: 35px;
+}
+
+.piano__links {
+	text-decoration: none;
+	color: #111;
+	border: 1px solid #111;
+	padding-left: 2px;
+	box-shadow: -1px -1px 1px 0px black;
+	width: 130px;
+	border-radius: 1%;
+}
+
+.piano__link_1 {
+	background-color: #FFFEE6;
+	transition: all 1s;
+}
+.piano__link_on_1:hover {
+	background-color: #D193FA;
+	transition: all 0.5s;
+	width: 145px;
+	margin-left: 2px;
+	padding-left: 5px;
+	box-shadow: 1px -1px 5px 0px black, inset 0px 0px 2px 0px black;
+}
+
+.piano__link_2 {
+	background-color: #09E090;
+	transition: all 1s;
+}
+.piano__link_on_2:hover {
+	background-color: #E3EB61;
+	transition: all 0.5s;
+	width: 145px;
+	margin-left: 2px;
+	padding-left: 5px;
+	box-shadow: 1px -1px 5px 0px black, inset 0px 0px 2px 0px black;
+}
+
+.piano__link_3 {
+	background-color: #FFE5ED;
+	transition: all 1s;	
+}
+.piano__link_on_3:hover {
+	background-color: #6DFF25;
+	transition: all 0.5s;
+	width: 145px;
+	margin-left: 2px;
+	padding-left: 5px;
+	box-shadow: 1px -1px 5px 0px black, inset 0px 0px 2px 0px black;
+}
+
+.piano__link_4 {
+	background-color: #4FF8D8;
+	transition: all 1s;
+}
+.piano__link_on_4:hover {
+	background-color: #FF3326;
+	transition: all 0.5s;
+	width: 145px;
+	margin-left: 2px;
+	padding-left: 5px;
+	box-shadow: 1px -1px 5px 0px black, inset 0px 0px 2px 0px black;
+}
+
+.piano__link_5 {
+	background-color: #7BD8E3;
+	transition: all 1s;
+}
+.piano__link_on_5:hover {
+	background-color: #989FDF;
+	transition: all 0.5s;
+	width: 145px;
+	margin-left: 2px;
+	padding-left: 5px;
+	box-shadow: 1px -1px 5px 0px black, inset 0px 0px 2px 0px black;
+}
+
+.piano_animation_on__wrapper {
+	width: 120px;
+	height: 100px;
+	/*border: 1px solid green;*/
+	position: relative;
+	margin: 20px 16px;
+}
+.piano_animation_on {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+}
+.piano_animation_on__line {
+	position: absolute;
+	top: 5px;
+	left: 5px;
+	width: 25px;
+	height: 12px;
+	background-color: #FA4747;
+	border-radius: 20%;
+	border: 1px solid black;
+	transition: 0.4s;
+}
+.piano_animation_on__line--active {
+	background-color: #19E047;
+	transition: 0.4s;
+}
+.piano_animation_on__ball {
+	position: absolute;
+	width: 16px;
+	height: 16px;
+	background-color: #FDEFEC;
+	border: 1px solid black;
+	top: 3.2px;
+	left: 5px;
+	border-radius: 50%;
+	transition: 0.2s;
+	box-shadow: inset 0 0 1.3px 0 gray, 0 0 1px 0 black; 
+}
+.piano_animation_on__ball--active {
+	transform: translateX(9px);
+	transition: 0.2s;
+}
+
+.piano_animation__text {
+	position: absolute;
+	top: 0px;
+	left: 45px;
+}
+
+
+
+/*Меню Бургер = ==  ============== */
+
+.r_1_burg_house {
+	border: 1px solid rgba(255,255,255,0.7);
+	max-width: 520px;
+	max-height: 220px;
+	margin-left: 2px;
+	flex: 0 1 45%;
+}
+
+.burg_house--flex_row {
+	display: flex;
+}
+
+.burg_house__main_menu {
+	margin: 10px 10px;
+/*	border: 1px solid black;*/
+	max-width: 100%;
+}
+ /*Отключает меню*/
+.burg_house__main_menu--off {
+	display: none;
+}
+
+.burg_house__list {
+	list-style: none;
+	display: flex;
+/*	border: 1px solid red;*/
+	margin: 0 auto;
+	flex-wrap: wrap;
+	max-width: 100%;
+}
+.burg_house__elements {
+	border: 1px solid black;
+	margin-right: 5px;
+	box-shadow: 0 0 2px 0 black;
+}
+
+.burg_house__links {
+	text-decoration: none;
+	color: #111;
+	background-color: #E8DC9E;
+	width: 82px;
+	text-align: center;
+}
+
+.burg_house__burger {
+	/*border: 1px solid red;*/
+	width: 55px;
+	height: 55px;
+	position: relative;
+	margin-right: 55px;
+	margin-top: 10px;
+}
+
+.burg_house__burger_lines:before {
+	content: "";
+	width: 45px;
+	height: 6px;
+	top: -14px;
+	left: 0px;
+	position: absolute;
+	background-color: #111;
+}
+.burg_house__burger_lines {
+	width: 45px;
+	height: 6px;
+	background-color: #111;
+	position: absolute;
+	top: 12px;
+	left: 5px;
+}
+.burg_house__burger_lines:after {
+	content: "";
+	width: 45px;
+	height: 6px;
+	top: 14px;
+	left: 0px;
+	position: absolute;
+	background-color: #111;
+}
+
+.burg_house_transform {
+	align-self: flex-end;
+	display: flex;
+	flex-direction: column;
+	margin: 10px 70px 10px 10px;
+}
+.burger__button {
+	margin-bottom: 10px;
+	border: 1px solid black;
+	border-radius: 3.5%;
+	font-size: 15px;
+	padding: 2px;
+	background-color: #E9BC80;
+	box-shadow: 0 0 2px 0 black;
+}
+.no_burger__button {
+	margin-bottom: 10px;
+	border: 1px solid black;
+	border-radius: 3.5%;
+	font-size: 15px;
+	padding: 2px;
+	background-color: #64BEFF;
+	box-shadow: 0 0 2px 0 black;
+}
+/* Показать Вертикальное меню*/
+.burg_house__main_menu--on {
+	display: block;
+	position: relative;
+	margin: 10px 0;
+}
+.burg_house__list--burger {
+	display: flex;
+	flex-direction: column;
+	position: absolute;
+	top: 42px;
+	left: 194px;
+}
+.burg_house__elements--burger {
+	margin-bottom: 1px;
+}
+
+ /*  Кнопка В обычное меню включение/отключение*/
+
+/* прячет бургер*/
+.burg_house__burger--off {
+	display: none;
+}
+.burg_house--column {
+	flex-direction: column;
+	justify-content: space-between;
+}
+.burg_house_transform--default_position {
+	align-self: flex-start;
+}
+
+ /* ==== */
+
+/* Список ToDo =============================== */
+.r_1_to-do {
+	border: 1px solid rgba(255,255,255,0.7);
+	padding: 5px 5px;
+	width: 45%;
+	margin-left: 2px;
+	flex: 0 1 70%;
+}
+.to-do__add {
+	
+}
+.to-do__active_title {
+	margin-bottom: 8px;
+	font-size: 18px;
+	font-weight: 600;
+}
+.to-do__active_list {
+
+}
+.to-do__finish_title {
+	margin-bottom: 8px;
+	font-size: 18px;
+	font-weight: 600;
+}
+.to-do__enter_task {
+	border: 1px solid black;
+	box-shadow: 0px 0px 2px #111;
+	height: 22px;
+	width: 76%;
+}
+.to-do__add_task {
+	border: 1px solid black;
+	box-shadow: 0px 0px 2px blue;
+	padding: 3px;
+	background-color: #C3CDE6;
+}
+.to-do__tasks {
+	/*border: 1px solid black;*/
+	display: flex;
+	justify-content: space-between;
+	padding-top: 15px;
+}
+.to-do__active_tasks {
+	flex: 0 0 50%;
+}
+.to-do__finish_tasks {
+	flex: 0 0 50%;
+}
+.to-do__active_elements {
+	padding-bottom: 5px;
+}
+.to-do__finish_elements {
+	padding-bottom: 5px;
+}
+
+ /*========= РЯД № 2 ============*/
+
+.row_2 {
+	display: flex;
+	justify-content: space-between;
+	/*border: 1px solid rgba(255,255,255,0.7);*/
+	width: 100%;
+
+}
+/* ============ СЛАЙДЕР ========================== */
+.r_2_slider {
+	border: 1px solid rgba(255,255,255,0.7);
+	padding: 15px 30px 15px 30px;
+	display: flex;
+	align-items: center;
+}
+.r_2_slider__slide {
+	border: 1px solid black;
+	border-radius: 1.5%;
+	width: 200px;
+	height: 309px;
+	box-shadow: 0px 0px 5px black;
+	position: relative;
+}
+.r_2_slider__img {
+	width: 100%;
+	height: 100%;
+	border-radius: 1.5%;
+	transition: 25s;
+}
+.r_2_slider__arrow_left {
+	position: absolute;
+	top: 50%;
+	left: 0;
+	width: 35px; 
+	transform: rotate(-90deg);
+	opacity: 0.7;
+	margin-left: 2px;
+	transition: 25s;
+}
+.r_2_slider__arrow_right {
+	position: absolute;
+	top: 50%;
+	right: 0;
+	width: 35px; 
+	transform: rotate(90deg);
+	opacity: 0.7;
+	margin-right: 2px;
+	transition: 25s;
+}
+ /* ===== ЧАСЫ ========================*/
+.r_2_clock {
+	border: 1px solid rgba(255,255,255,0.7);
+	padding: 5px 30px 15px 30px;
+	width: 30%;
+}
+.clock__wrap {
+	width: 250px;
+	height: 250px;
+	/*border: 2px solid red;*/
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	margin: 0 auto;
+}
+.clock__clock_border {
+	width: 200px;
+	height: 200px;
+	border: none;
+	border-radius: 50%;
+	box-shadow: inset 0px 0px 3px 1px #111,0px 0px 15px -1px #111;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-image: url('img/clock2.png');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 100%;
+}
+.clock__clock_center {
+	width: 7px;
+	height: 7px;
+	border: 1px solid black;
+	border-radius: 50%;
+	background-color: black;
+	z-index: 3;
+	box-shadow: 2px 0 3px 5px #111;
+	opacity: 0.8;
+	position: absolute;
+	top: 121px;
+	left: 124px;
+}
+.clock__clock_hours {
+	width: 45px;
+	height: 2px;
+	background-color: #23282B;
+	position: absolute;
+	/*top: 121px;
+	left: 123px;*/
+	transform-origin: 0% 100%;
+
+	top: 122.5px;
+	left: 127.5px;
+}
+.clock__clock_min {
+	width: 57px;
+	height: 1.9px;
+	background-color: #23282B;
+	position: absolute;
+	/*top: 121px;
+	left: 123px;*/
+	transform-origin: 0% 100%;
+
+	top: 122.5px;
+	left: 127.2px;
+}
+.clock__clock_sec {
+	width: 61px;
+	height: 1px;
+	background-color: #23282B;
+	position: absolute;
+	/*top: 122px;
+	left: 123px;*/
+	transform-origin: 0% 100%;
+
+	top: 122px;
+	left: 127px;
+}
+/*.time_12 {
+	position: absolute;
+	top: 27px;
+	left: 115px;
+}
+.time_13 {
+	position: absolute;
+	top: 40px;
+	left: 158px;
+}
+.time_14 {
+	position: absolute;
+	top: 71px;
+	left: 189px;
+}
+.time_15 {
+	position: absolute;
+	top: 113px;
+	left: 200px;
+}
+.time_16 {
+	position: absolute;
+	top: 155px;
+	left: 190px;
+}
+.time_17 {
+	position: absolute;
+	top: 190px;
+	left: 158px;
+}
+.time_18 {
+	position: absolute;
+	top: 200px;
+	left: 115px;
+}
+.time_19 {
+	position: absolute;
+	top: 190px;
+	left: 72px;
+}
+.time_20 {
+	position: absolute;
+	top: 158px;
+	left: 40px;
+}
+.time_21 {
+	position: absolute;
+	top: 115px;
+	left: 30px;
+}
+.time_22 {
+	position: absolute;
+	top: 71px;
+	left: 40px;
+}
+.time_23 {
+	position: absolute;
+	top: 40px;
+	left: 72px;
+}*/
+ /*===== цифровые часы ========*/
+.new_clock {
+	/*border: 1px solid black;*/
+	background-image: url(img/new_clock.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 100%;
+	max-width: 250px;
+	height: 100px;
+	margin: 0 auto;
+	transform: rotate(-1deg);
+	position: relative;
+	color: #940000;
+	font-size: 30px;
+	font-weight: 700;
+}
+.new_clock__hours {
+	/*border: 1px solid red;*/
+	position: absolute;
+	width: 40px;
+	height: 30px;
+	top: 40px; 
+	left: 88px;
+}
+.new_clock__beep {
+	/*border: 1px solid red;*/
+	position: absolute;
+	width: 20px;
+	height: 30px;
+	top: 44px; 
+	left: 125px;
+}
+.new_clock__red_1 {
+	position: absolute;
+	background-color: #940000;
+	width: 5px;
+	height: 5px; 
+	top: 10px;
+	left: 3px;
+}
+.new_clock__red_2 {
+	position: absolute;
+	background-color: #940000;
+	width: 5px;
+	height: 5px; 
+	top: 20px;
+	left: 3px;
+}
+.new_clock__min {
+	/*border: 1px solid red;*/
+	position: absolute;
+	width: 40px;
+	height: 30px;
+	top: 40px; 
+	left: 139px;
+}
+
+/* ======= Галерея =======================*/
+.r_2_gallery {
+	border: 1px solid rgba(255,255,255,0.7);
+	padding: 15px 30px 15px 30px;
+	max-width: 45%;
+}
+.r_2_gallery__wrap {
+	/*border: 1px solid black;*/
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.r_2_gallery__cards {
+	/*border: 1px solid black;*/
+	border-radius: 3%;
+	width: 100px;
+	height: 165px;
+	padding: 1px;
+	margin: 3px;
+	box-shadow: 0 0 2px 1px #111;
+}
+.r_2_gallery__img {
+	width: 100%;
+	height: 100%;
+	border: 1px solid black;
+	border-radius: 3%;
+}
+.r_2_gallery__cards:hover {
+	transform: scale(1.6);
+	transition: 0.5s;
+}
+
+.r_2_gallery__popup {
+	position: fixed;
+	z-index: 10;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+}
+.r_2_gallery__popup_wrapper {
+	position: relative;
+	width: 30%;
+	height: 90%;
+	/*border: 1px solid red;*/
+}
+.r_2_gallery__popup_img {
+	width: 100%;
+	height: 100%;
+	box-shadow: 0 0 3px 2px #111, inset 0 0 3px 1px #111;
+	border-radius: 1.5%;
+}
+.r_2_gallery__popup_close {
+	position: absolute;
+	width: 30px;
+	height: 30px;
+	right: 5px;
+	top: 5px;
+}
+.r_2_gallery__popup--off { display: none; }
+.r_2_gallery__popup--on { display: flex; }
+
+/*========= РЯД № 3 ============*/
+.row_3 {
+	/*border: 1px solid black;*/
+	padding: 45px 0 45px 0; 
+}
+ /*==== Рисовалка на канвасе =================*/
+.r_3_paint {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	border: 1px solid rgba(255,255,255,0.7);
+	padding-bottom: 45px;
+}
+.r_3_paint__canvas {
+	margin: 50px 0 0 50px;
+	display: block;
+	border: 2px solid black;
+	border-radius: 0.5%;
+	box-shadow: 0 0 8px 1px black;
+	background-color: white;
+}
+.r_3_paint__control {
+	display: flex;
+	flex-direction: column;
+	margin: 70px 0 0 0;
+}
+.r3_paint__contr--b_all {
+	width: 150px;
+	height: 30px;
+	margin: 0 0 10px 0;
+	box-shadow: 0 0 4px 1px black;
+	border-radius: 1%;
+}
+.r3_paint__contr--b_all:hover {
+	box-shadow: 0 0 7px 2px black, inset 0 0 1px 0px gray;
+	transform: scale(1.04);
+	font-size: 14.5px;
+	transition: 0.3s;
+	transition-timing-function: ease-in-out;
+}
+
+
+
+
+
+@media (max-width: 1373px) {
+	.row_1 {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+	.row_2 {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	}
+	.r_1_piano {
+		min-width: 319px;
+	}
+	.r_2_clock {
+		min-width: 334px; 
+	}
+	.r_2_gallery {
+		min-width: 593px;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

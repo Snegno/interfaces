@@ -1,0 +1,256 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="styles.css?v=1.05">
+    <title>Портфолио</title>
+  </head>
+  <body>
+
+    <div class="container">
+
+      <!--  ПЕРВЫЙ РЯД  -->
+      <div class="row_1">
+          <!-- Меню Пианино -->
+          <div class="r_1_piano piano"> 
+            <nav class="piano__main_menu">
+              <ul class="piano__list">
+                <li class="piano__elements">
+                  <a class="piano__links piano__link_1" href="#button-1">
+                    Кнопка_меню-1
+                  </a>
+                </li>
+                <li class="piano__elements">
+                  <a class="piano__links piano__link_2" href="#button-2">
+                    Кнопка_меню-2
+                  </a>
+                </li>
+                <li class="piano__elements">
+                  <a class="piano__links piano__link_3" href="#button-3">
+                    Кнопка_меню-3
+                  </a>
+                </li>
+                <li class="piano__elements">
+                  <a class="piano__links piano__link_4" href="#button-2">
+                    Кнопка_меню-4
+                  </a>
+                </li>
+                <li class="piano__elements">
+                  <a class="piano__links piano__link_5" href="#button-2">
+                    Кнопка_меню-5
+                  </a>
+                </li>
+              </ul>
+              <div class="piano_animation_on__wrapper">
+                <div class="piano_animation_on">
+                  <div class="piano_animation_on__line"></div>
+                  <div class="piano_animation_on__ball"></div>
+                  <p class="piano_animation__text"> Включить Анимацию кнопок</p>
+                </div>
+              </div>
+            </nav>
+          </div> 
+
+          <!-- Меню Бургер === ============ ============  -->
+
+          <div class="r_1_burg_house burg_house burg_house--flex_row burg_house--column">
+
+            <nav class="burg_house__main_menu">
+
+              <ul class="burg_house__list">  
+
+                <li class="burg_house__elements burg_house__elements--burger">
+                  <a class="burg_house__links" href="#button-1">
+                    Кнопка-1
+                  </a>
+                </li>
+                <li class="burg_house__elements burg_house__elements--burger">
+                  <a class="burg_house__links" href="#button-2">
+                    Кнопка-2
+                  </a>
+                </li>
+                <li class="burg_house__elements burg_house__elements--burger">
+                  <a class="burg_house__links" href="#button-3">
+                    Кнопка-3
+                  </a>
+                </li>
+                <li class="burg_house__elements burg_house__elements--burger">
+                  <a class="burg_house__links" href="#button-2">
+                    Кнопка-4
+                  </a>
+                </li>
+              </ul>
+            </nav>
+
+            <div class="burg_house_transform burg_house_transform--default_position">
+              <button class="burger__button">В Бургер</button>
+              <button class="no_burger__button">В обычное меню</button>
+            </div>
+
+            <div class="burg_house__burger burg_house__burger--off">
+                <span class="burg_house__burger_lines"></span>
+            </div>
+          </div>
+
+          <!--  Лист Ту-Ду ================  -->
+          <div class="r_1_to-do">
+
+            <!-- добавление задачи -->
+            <div class="to-do__add">
+              <form class="to-do__add_form">
+                <input maxlength="35"  class="to-do__enter_task" type="text"></input>
+                <button type="button" class="to-do__add_task">Добавить задачу</button>
+              </form>  
+            </div>
+
+            <!-- список задач -->
+              <div class="to-do__tasks">
+                <div class="to-do__active_tasks">
+                  <p class="to-do__active_title">Нужно сделать:</p>
+                  <ul class="to-do__active_list">
+                    <!-- Сюда будут добавляться задачи -->
+                  </ul>
+                </div>
+
+                <div class="to-do__finish_tasks">
+                  <p class="to-do__finish_title">Сделано:</p>
+                  <ul class="to-do__finish_list">
+                    <!-- Сюда будут добавляться задачи -->
+                  </ul>
+                </div>
+              </div> 
+          </div>
+
+      </div> 
+
+        <!-- ВТОРОЙ РЯД -->
+      <div class="row_2">
+              <!-- СЛАЙДЕР -->
+          <div class="r_2_slider">
+            <div class="r_2_slider__slide">
+              <img class="r_2_slider__img" src="img/slide_1.jpg" alt=""></img>
+              <img class="r_2_slider__arrow_left" src="img/arrow_up.png"></img>
+              <img class="r_2_slider__arrow_right" src="img/arrow_up.png"></img>
+            </div>
+          </div>
+
+           <!-- Здесь будут Аналоговые Часы -->
+          <div class="r_2_clock">
+
+            <div class="clock__wrap clock">
+              <div class="clock__clock_border">
+                <div class="clock__clock_center"></div>
+                <div class="clock__clock_hours"></div>
+                <div class="clock__clock_min"></div>
+                <div class="clock__clock_sec"></div>
+                <div class="clock__time_number">
+                  <!-- Если будет нужен циферблат -->
+                  <!-- <div class="time_12">12</div>
+                  <div class="time_13">13</div>
+                  <div class="time_14">14</div>
+                  <div class="time_15">15</div>
+                  <div class="time_16">16</div>
+                  <div class="time_17">17</div>
+                  <div class="time_18">18</div>
+                  <div class="time_19">19</div>
+                  <div class="time_20">20</div>
+                  <div class="time_21">21</div>
+                  <div class="time_22">22</div>
+                  <div class="time_23">23</div> -->
+                </div>
+              </div>
+            </div>
+            <div class="clock__wrap_2 new_clock">
+                <div class="new_clock__hours"></div>
+                <div class="new_clock__beep">
+                  <div class="new_clock__red_1"></div>
+                  <div class="new_clock__red_2"></div>
+                </div>
+                <div class="new_clock__min"></div>
+            </div>
+          </div>
+
+           <!-- Галерея -->
+          <div class="r_2_gallery">
+            <div class="r_2_gallery__wrap">
+               <!-- Карточки -->
+              <div class="r_2_gallery__card_1 r_2_gallery__cards">
+                <img class="r_2_gallery__img_1 r_2_gallery__img" src="img/fallout/1.png"></img>
+              </div>
+                <!-- PopUp -->
+              <div class="r_2_gallery__popup r_2_gallery__popup--off">
+                <div class="r_2_gallery__popup_wrapper">
+                  <img class="r_2_gallery__popup_img" src="img/fallout/1.png"></img>
+                  <img class="r_2_gallery__popup_close" src="img/crest.png"></img>
+                </div> 
+              </div>
+                <!-- // -->
+              <div class="r_2_gallery__card_2 r_2_gallery__cards">
+                <img class="r_2_gallery__img_2 r_2_gallery__img" src="img/fallout/2.png"></img>
+              </div>
+
+              <div class="r_2_gallery__card_3 r_2_gallery__cards">
+                <img class="r_2_gallery__img_3 r_2_gallery__img" src="img/fallout/3.png"></img>
+              </div>
+              <div class="r_2_gallery__card_4 r_2_gallery__cards">
+                <img class="r_2_gallery__img_4 r_2_gallery__img" src="img/fallout/4.png"></img>
+              </div>
+              <div class="r_2_gallery__card_5 r_2_gallery__cards">
+                <img class="r_2_gallery__img_5 r_2_gallery__img" src="img/fallout/5.png"></img>
+              </div>
+              <div class="r_2_gallery__card_6 r_2_gallery__cards">
+                <img class="r_2_gallery__img_6 r_2_gallery__img" src="img/fallout/6.png"></img>
+              </div>
+              <div class="r_2_gallery__card_7 r_2_gallery__cards">
+                <img class="r_2_gallery__img_7 r_2_gallery__img" src="img/fallout/7.png"></img>
+              </div>
+              <div class="r_2_gallery__card_8 r_2_gallery__cards">
+                <img class="r_2_gallery__img_8 r_2_gallery__img" src="img/fallout/8.png"></img>
+              </div>
+              <div class="r_2_gallery__card_9 r_2_gallery__cards">
+                <img class="r_2_gallery__img_9 r_2_gallery__img" src="img/fallout/9.png"></img>
+              </div>
+              <div class="r_2_gallery__card_10 r_2_gallery__cards">
+                <img class="r_2_gallery__img_10 r_2_gallery__img" src="img/fallout/10.png"></img>
+              </div>
+            </div>
+          </div>
+      </div>
+
+      <!-- Третий РЯД -->
+      <div class="row_3">
+          <!-- Paint -->
+          <div class="r_3_paint">
+            <div class="r_3_paint__control">
+            <button class="r_3_paint__control_clear r3_paint__contr--b_all">Зачистить все
+            </button>
+            <button class="r_3_paint__control_lastik r3_paint__contr--b_all">Ластик
+            </button>
+            <button class="r_3_paint__control_brush r3_paint__contr--b_all">Кисть</button>
+            <button class="r_3_paint__control_brush_big r3_paint__contr--b_all">Размер кисти +</button>
+            <button class="r_3_paint__control_brush_small r3_paint__contr--b_all">Размер кисти -</button>
+            <button class="r_3_paint__control_next_color r3_paint__contr--b_all">Другой цвет</button>
+          </div>  
+          <canvas class='r_3_paint__canvas' height="40" width="40"></canvas> 
+          </div>
+
+      </div>  
+
+    </div> 
+
+
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+
+  <script type="text/javascript" src="todo.js?v=1.05"></script>
+  <script type="text/javascript" src="menu_button.js?v=1.05"></script>
+  <script type="text/javascript" src="burger.js?v=1.05"></script>
+  <script type="text/javascript" src="slider.js?v=1.05"></script>
+  <script type="text/javascript" src="clock.js?v=1.05"></script>
+  <script type="text/javascript" src="gallery.js?=1.05"></script>
+  <script type="text/javascript" src="paint.js"></script>
+
+  </body>
+</html>
