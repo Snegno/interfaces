@@ -752,14 +752,14 @@ body {
 	font-size: 18px;
 }
 
-.r_4_basket__products {
+.r_4__products {
 	display: flex;
 	justify-content: center;
 	margin: 0 auto;
 	padding: 20px 0 20px 0;
 }
 
-.r_4_basket__products_card {
+.r_4__products_card {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -770,13 +770,16 @@ body {
 	box-shadow: 0 0 3px 0 black;
 }
 
-.products__card_img--features {
+.r_4__products_card_img--features {
 	max-width: 200px;
 	max-height: 200px;
 	margin-bottom: 10px;
+	border: 1px solid black;
+	box-shadow: 0 0 1px 0.7px black;
+	border-radius: 1%;
 }
 
-.products__buy {
+.r_4__products_buy {
 	margin-top: 15px;
 	width: 100px;
 	height: 30px;
@@ -786,25 +789,25 @@ body {
 	font-size: 15px;
 }
 
-.products__buy:hover {
+.r_4__products_buy:hover {
 	background-color: #FDF4E3;
 	transform: scale(1.005);
 }
 
 /*=== Корзина ===*/
-.basket {
+.r_4__basket {
 	border: 1px solid black;
 	padding: 15px;
 	max-width: 70%;
 	margin: 0 auto;
 }
 
-.basket__list {
+.r_4__basket_list {
 	list-style: none;
 	margin: 20px 0 0 20px;
 }
 
-.basket__element {
+.r_4__basket_element {
 	display: flex;
 	justify-content: space-evenly;
 	align-items: center;
@@ -814,20 +817,20 @@ body {
 	box-shadow: 0 0 1px 0 black, inset 0 0 1px 0 black;
 }
 
-.basket__product_foto {
+.r_4__basket_product_foto {
 	max-width: 70px;
 }
 
-.basket__product_about {
+.r_4__basket_product_about {
    min-width: 43%;
    text-align: center;
 }
 
-.basket__counter {
+.r_4__basket_counter {
 	display: flex;
 }
 
-.basket__vol {
+.r_4__basket_vol {
 	margin: 0 10px 0 10px;
 	background-color: #fff;
 	font-size: 20px;
@@ -836,17 +839,17 @@ body {
 	min-width: 30px;
 }
 
-.basket__volume {
+.r_4__basket_volume {
 	margin-top: 5px;
 	min-width: 20px;
 	text-align: center;
 }
 
-.basket__price {
+.r_4__basket_price {
 	min-width: 90px;
 }
 
-.basket__delete {
+.r_4__basket_delete {
 	width: 100px;
 	height: 30px;
 	background-color: #FFFFF0;
@@ -854,19 +857,19 @@ body {
 	border-radius: 1%;
 	font-size: 15px;
 }
-.basket__delete:hover {
+.r_4__basket_delete:hover {
 	background-color: #FDF4E3;
 	transform: scale(1.005);
 }
 
-.basket__total {
+.r_4__basket_total {
 	display: flex;
 	align-items: flex-end;
 	justify-content: flex-end;
 	font-weight: 700;
 }
 
-.basket__next {
+.r_4__basket_next {
 	width: 120px;
 	height: 30px;
 	background-color: #FFFFF0;
@@ -875,37 +878,37 @@ body {
 	margin: 25px 0 0 25px;
 	font-size: 15px;
 }
-.basket__next:hover {
+.r_4__basket_next:hover {
 	background-color: #FDF4E3;
 	transform: scale(1.005);
 }
 
 /*Ордер*/
 
-.order {
+.r_4__order {
 	margin: 25px auto;
 	border: 2px solid black;
 	max-width: 70%;
 }
 
-.order__info {
+.r_4__order_info {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	padding: 20px 0 20px 0;
 }
 
-.order__input {
+.r_4__order_input {
 	border: 1px solid black;
 	margin: 10px 0 0 0;
 	width: 20%;
 }
 
-.order__summ {
+.r_4__order_summ {
 	margin: 10px 0 0 0;
 }
 
-.order__pay {
+.r_4__order_pay {
 	margin-top: 15px;
 	width: 125px;
 	height: 43px;
@@ -915,7 +918,7 @@ body {
 	font-size: 15px;
 }
 
-.order__pay:hover {
+.r_4__order_pay:hover {
 	background-color: #FDF4E3;
 	transform: scale(1.005);
 }
