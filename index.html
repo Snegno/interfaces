@@ -237,10 +237,177 @@
 
       </div>  
 
+
+      <!-- Четвертый РЯД -->
+      <div id="app_1" class="row_4_toDo">
+        <div class="row_4_toDo__header">
+          <div class="todo_container">
+            <div class="row_4_toDo__logo">ToDo List</div>
+
+            <div class="row_4_toDo__form">
+              <input class="row_4_toDo__form_input" type="text" 
+              v-bind:value="inputText" 
+              v-on:input="inInput" 
+              v-on:keypress.enter="addTask">
+
+              <button class="row_4_toDo__btn" 
+              v-on:click="addTask">Add a new task</button>
+
+            </div>
+          </div>
+        </div>
+        <div class="todo_container">
+
+          <!-- Список toDO -->
+          <h2 class="row_4_toDo__task">
+            <span>To Do</span>
+            <span class="row_4_toDo__mask_num">{{ one_list_count=list_arr.length }}</span>
+          </h2>
+
+          <ul class="row_4_toDo__mask_list">
+            <li class="row_4_toDo__element" v-for="item in list_arr">
+              <div>
+                <input class="row_4_toDo__checkbox" type="checkbox" 
+                v-on:change="doCheck(item, 'need')">
+                <span class="row_4_toDo__task_text">{{ item }}</span>
+              </div>
+              <button class="row_4_toDo__btn_remove"
+              v-on:click="removeTask(item)">Remove</button>
+            </li>
+          </ul>
+
+          <!-- Список DONE -->
+          <h2 class="row_4_toDo__task">
+            <span>Done</span>
+            <span class="row_4_toDo__mask_num">{{ two_list_count=list_arr_close.length }}</span>
+          </h2>
+
+          <ul class="row_4_toDo__mask-list row_4_toDo__complete_list">
+            <li class="row_4_toDo__element" v-for="item in list_arr_close">
+              <div>
+                <input class="row_4_toDo__checkbox" type="checkbox" 
+                v-on:change="doCheck(item, 'complete')">
+                <span class="row_4_toDo__task_text">{{ item }}</span>
+              </div>
+              <button class="row_4_toDo__btn_remove" 
+              v-on:click="removeTask(item)">Remove</button>
+            </li>
+          </ul>
+
+        </div>
+      </div>
+
+
+      <!-- Пятый РЯД -->
+      <div class="row_5">
+          <!-- Корзина на Vue js -->
+        <div class="r_5_basket" id="app" v-cloak>
+  
+          <ul class="r_5__products">
+            <li class="r_5__products_card">
+              <img class="r_5__products_card_img r_5__products_card_img--features" src="img/1.png"></img>
+              <p class="r_5__products_price">1000 руб.</p>
+              <p class="r_5__products_about">Лодка надувная, зеленая.</p>
+              <button id="0" class="r_5__products_buy products__buy_1"
+              v-on:click="clickBuy">
+                Купить
+              </button>
+            </li>
+            <li class="r_5__products_card">
+              <img class="r_5__products_card_img r_5__products_card_img--features" src="img/2.png"></img>
+              <p class="r_5__products_price">2000 руб.</p>
+              <p class="r_5__products_about">Лодка надувная, желтая.</p>
+              <button id="1" class="r_5__products_buy products__buy_2"
+              v-on:click="clickBuy">
+                Купить
+              </button>
+            </li>
+            <li class="r_5__products_card">
+              <img class="r_5__products_card_img r_5__products_card_img--features" src="img/3.png"></img>
+              <p class="r_5__products_price">3000 руб.</p>
+              <p class="r_5__products_about">Лодка с веслами.</p>
+              <button id="2" class="r_5__products_buy products__buy_3"
+              v-on:click="clickBuy">
+                Купить
+              </button>
+            </li>
+          </ul>
+          <!-- Корзина -->
+          <div class="r_5__basket"
+          v-show="show_basket">
+            <span class="r_5__basket_null"
+            v-show="show">
+              В вашей корзине пока нет товаров
+            </span>
+            <ul class="r_5__basket_list">
+              <li class="r_5__basket_element"
+              v-for:="(product,index) in buy_products_img">
+                <img 
+                v-bind:src="buy_products_img[index]" alt="" class="r_5__basket_product_foto">
+                <p class="r_5__basket_product_about">
+                  {{ buy_products_about[index] }}
+                </p>
+                <div class="r_5__basket_counter">
+                  <button class="r_5__basket_minus r_5__basket_vol"
+                  v-on:click="priceVolumeDown(index)">
+                    -
+                  </button> 
+                  <span class="r_5__basket_volume"> 
+                    {{ buy_products_count[index] }} 
+                  </span>
+                  <button class="r_5__basket_plus r_5__basket_vol"
+                  v-on:click="priceVolumeUp(index)">
+                    +
+                  </button>
+                </div>
+                <div class="r_5__basket_price">
+                {{ buy_products_price_basket[index] }} руб.</div>
+                <button class="r_5__basket_delete"
+                v-on:click="toDelete(index)">
+                  Удалить
+                </button>
+              </li>
+            </ul>
+            <div class="r_5__basket_total" 
+            v-show="!show">
+              Итого: {{ total_basket }} руб.
+              <button class="r_5__basket_next"
+              v-on:click="goOrder">
+                Оформить заказ
+              </button>
+            </div>
+          </div>
+
+          <div class="r_5__order"
+          v-show="!show_basket">
+            <form name="myForm" class="r_5__order_info" method="post">
+              <input name="name" class="r_5__order_pers_data r_5__order_input" type="text" placeholder="ФИО"
+              v-model="input_name"></input>
+              <input name="email" class="r_5__order_e-mail r_5__order_input" type="email" placeholder="Адрес эл. почты"
+              v-model="input_email"></input>
+              <input name="phone" class="r_5__order_phone r_5__order_input" type="tel" placeholder="+79999999999" 
+              v-model="input_phone"></input>
+              <p class="r_5__order_summ">К оплате: {{ total_basket }} руб.</p>
+              <button class="r_5__order_pay" type="submit"
+              v-on:click="sendForm">Перейти к оплате</button>
+            </form>
+          </div>
+        </div>
+
+      </div>  
+
+
+
+
     </div> 
 
 
   </div>
+
+  <script src="https://unpkg.com/vue@next"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script type="text/javascript" src="vueToDo.js"></script>
+  <script type="text/javascript" src="basket.js"></script>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 
