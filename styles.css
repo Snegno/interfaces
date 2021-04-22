@@ -733,6 +733,191 @@ body {
 	transition-timing-function: ease-in-out;
 }
 
+/*========= РЯД № 4 ============*/
+.row_4 {
+	/*border: 1px solid black;*/
+	padding: 45px 0 45px 0; 
+}
+ /*==== Корзина на Vue с отправкой через Axios =================*/
+/*v-cloak для того чтобы при прогрузке не было видно полей Vue js*/
+[v-cloak] {
+	display: none;
+}
+
+.r_4_basket {
+	width: 100%;
+	min-height: 600px;
+	border: 1px solid rgba(255,255,255,0.7);
+	padding-bottom: 45px;
+	font-size: 18px;
+}
+
+.r_4_basket__products {
+	display: flex;
+	justify-content: center;
+	margin: 0 auto;
+	padding: 20px 0 20px 0;
+}
+
+.products__card {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	border: 1px solid black;
+	border-radius: 2%;
+	padding: 15px;
+	margin-right: 50px;
+	box-shadow: 0 0 3px 0 black;
+}
+
+.products__card_img--features {
+	max-width: 200px;
+	max-height: 200px;
+	margin-bottom: 10px;
+}
+
+.products__buy {
+	margin-top: 15px;
+	width: 100px;
+	height: 30px;
+	background-color: #FFFFF0;
+	box-shadow: 0 0 2px 0.7px black;
+	border-radius: 1%;
+}
+
+.products__buy:hover {
+	background-color: #FDF4E3;
+	transform: scale(1.005);
+}
+
+/*=== Корзина ===*/
+.basket {
+	border: 1px solid black;
+	padding: 15px;
+	max-width: 70%;
+	margin: 0 auto;
+}
+
+.basket__list {
+	list-style: none;
+	margin: 20px 0 0 20px;
+}
+
+.basket__element {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	border: 1px solid black;
+	margin: 5px 0 5px 0;
+	padding: 5px 0 5px 0;
+	box-shadow: 0 0 1px 0 black, inset 0 0 1px 0 black;
+}
+
+.basket__product_foto {
+	max-width: 70px;
+}
+
+.basket__product_about {
+   min-width: 43%;
+   text-align: center;
+}
+
+.basket__counter {
+	display: flex;
+}
+
+.basket__vol {
+	margin: 0 10px 0 10px;
+	background-color: #fff;
+	font-size: 20px;
+	border: 1px solid black;
+	border-radius: 50%;
+	min-width: 25px;
+}
+
+.basket__volume {
+	margin-top: 5px;
+	min-width: 20px;
+	text-align: center;
+}
+
+.basket__price {
+	min-width: 90px;
+}
+
+.basket__delete {
+	width: 100px;
+	height: 30px;
+	background-color: #FFFFF0;
+	box-shadow: 0 0 2px 0.7px black;
+	border-radius: 1%;
+}
+.basket__delete:hover {
+	background-color: #FDF4E3;
+	transform: scale(1.005);
+}
+
+.basket__total {
+	display: flex;
+	align-items: flex-end;
+	justify-content: flex-end;
+	font-weight: 700;
+}
+
+.basket__next {
+	width: 120px;
+	height: 30px;
+	background-color: #FFFFF0;
+	box-shadow: 0 0 2px 0.7px black;
+	border-radius: 1%;
+	margin: 25px 0 0 25px;
+}
+.basket__next:hover {
+	background-color: #FDF4E3;
+	transform: scale(1.005);
+}
+
+/*Ордер*/
+
+.order {
+	margin: 25px 0 0 0;
+	border: 2px solid black;
+}
+
+.order__info {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 20px 0 20px 0;
+}
+
+.order__input {
+	border: 1px solid black;
+	margin: 10px 0 0 0;
+	width: 20%;
+}
+
+.order__summ {
+	margin: 10px 0 0 0;
+}
+
+.order__pay {
+	margin-top: 15px;
+	width: 110px;
+	height: 30px;
+	background-color: #FFFFF0;
+	box-shadow: 0 0 2px 0.7px black;
+	border-radius: 1%;
+}
+
+.order__pay:hover {
+	background-color: #FDF4E3;
+	transform: scale(1.005);
+}
+
+
+
+
 
 
 
