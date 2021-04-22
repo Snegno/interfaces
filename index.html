@@ -239,97 +239,97 @@
 
 
 
-      <!-- Четвертый РЯД -->
-      <div class="row_4">
+      <!-- Пятый РЯД -->
+      <div class="row_5">
           <!-- Корзина на Vue js -->
-        <div class="r_4_basket" id="app" v-cloak>
+        <div class="r_5_basket" id="app" v-cloak>
   
-          <ul class="r_4__products">
-            <li class="r_4__products_card">
-              <img class="r_4__products_card_img r_4__products_card_img--features" src="img/1.png"></img>
-              <p class="r_4__products_price">1000 руб.</p>
-              <p class="r_4__products_about">Лодка надувная, зеленая.</p>
-              <button id="0" class="r_4__products_buy products__buy_1"
+          <ul class="r_5__products">
+            <li class="r_5__products_card">
+              <img class="r_5__products_card_img r_5__products_card_img--features" src="img/1.png"></img>
+              <p class="r_5__products_price">1000 руб.</p>
+              <p class="r_5__products_about">Лодка надувная, зеленая.</p>
+              <button id="0" class="r_5__products_buy products__buy_1"
               v-on:click="clickBuy">
                 Купить
               </button>
             </li>
-            <li class="r_4__products_card">
-              <img class="r_4__products_card_img r_4__products_card_img--features" src="img/2.png"></img>
-              <p class="r_4__products_price">2000 руб.</p>
-              <p class="r_4__products_about">Лодка надувная, желтая.</p>
-              <button id="1" class="r_4__products_buy products__buy_2"
+            <li class="r_5__products_card">
+              <img class="r_5__products_card_img r_5__products_card_img--features" src="img/2.png"></img>
+              <p class="r_5__products_price">2000 руб.</p>
+              <p class="r_5__products_about">Лодка надувная, желтая.</p>
+              <button id="1" class="r_5__products_buy products__buy_2"
               v-on:click="clickBuy">
                 Купить
               </button>
             </li>
-            <li class="r_4__products_card">
-              <img class="r_4__products_card_img r_4__products_card_img--features" src="img/3.png"></img>
-              <p class="r_4__products_price">3000 руб.</p>
-              <p class="r_4__products_about">Лодка с веслами.</p>
-              <button id="2" class="r_4__products_buy products__buy_3"
+            <li class="r_5__products_card">
+              <img class="r_5__products_card_img r_5__products_card_img--features" src="img/3.png"></img>
+              <p class="r_5__products_price">3000 руб.</p>
+              <p class="r_5__products_about">Лодка с веслами.</p>
+              <button id="2" class="r_5__products_buy products__buy_3"
               v-on:click="clickBuy">
                 Купить
               </button>
             </li>
           </ul>
           <!-- Корзина -->
-          <div class="r_4__basket"
+          <div class="r_5__basket"
           v-show="show_basket">
-            <span class="r_4__basket_null"
+            <span class="r_5__basket_null"
             v-show="show">
               В вашей корзине пока нет товаров
             </span>
-            <ul class="r_4__basket_list">
-              <li class="r_4__basket_element"
+            <ul class="r_5__basket_list">
+              <li class="r_5__basket_element"
               v-for:="(product,index) in buy_products_img">
                 <img 
-                v-bind:src="buy_products_img[index]" alt="" class="r_4__basket_product_foto">
-                <p class="r_4__basket_product_about">
+                v-bind:src="buy_products_img[index]" alt="" class="r_5__basket_product_foto">
+                <p class="r_5__basket_product_about">
                   {{ buy_products_about[index] }}
                 </p>
-                <div class="r_4__basket_counter">
-                  <button class="r_4__basket_minus r_4__basket_vol"
+                <div class="r_5__basket_counter">
+                  <button class="r_5__basket_minus r_5__basket_vol"
                   v-on:click="priceVolumeDown(index)">
                     -
                   </button> 
-                  <span class="r_4__basket_volume"> 
+                  <span class="r_5__basket_volume"> 
                     {{ buy_products_count[index] }} 
                   </span>
-                  <button class="r_4__basket_plus r_4__basket_vol"
+                  <button class="r_5__basket_plus r_5__basket_vol"
                   v-on:click="priceVolumeUp(index)">
                     +
                   </button>
                 </div>
-                <div class="r_4__basket_price">
+                <div class="r_5__basket_price">
                 {{ buy_products_price_basket[index] }} руб.</div>
-                <button class="r_4__basket_delete"
+                <button class="r_5__basket_delete"
                 v-on:click="toDelete(index)">
                   Удалить
                 </button>
               </li>
             </ul>
-            <div class="r_4__basket_total" 
+            <div class="r_5__basket_total" 
             v-show="!show">
               Итого: {{ total_basket }} руб.
-              <button class="r_4__basket_next"
+              <button class="r_5__basket_next"
               v-on:click="goOrder">
                 Оформить заказ
               </button>
             </div>
           </div>
 
-          <div class="r_4__order"
+          <div class="r_5__order"
           v-show="!show_basket">
-            <form name="myForm" class="r_4__order_info" method="post">
-              <input name="name" class="r_4__order_pers_data r_4__order_input" type="text" placeholder="ФИО"
+            <form name="myForm" class="r_5__order_info" method="post">
+              <input name="name" class="r_5__order_pers_data r_5__order_input" type="text" placeholder="ФИО"
               v-model="input_name"></input>
-              <input name="email" class="r_4__order_e-mail r_4__order_input" type="email" placeholder="Адрес эл. почты"
+              <input name="email" class="r_5__order_e-mail r_5__order_input" type="email" placeholder="Адрес эл. почты"
               v-model="input_email"></input>
-              <input name="phone" class="r_4__order_phone r_4__order_input" type="tel" placeholder="+79999999999" 
+              <input name="phone" class="r_5__order_phone r_5__order_input" type="tel" placeholder="+79999999999" 
               v-model="input_phone"></input>
-              <p class="r_4__order_summ">К оплате: {{ total_basket }} руб.</p>
-              <button class="r_4__order_pay" type="submit"
+              <p class="r_5__order_summ">К оплате: {{ total_basket }} руб.</p>
+              <button class="r_5__order_pay" type="submit"
               v-on:click="sendForm">Перейти к оплате</button>
             </form>
           </div>

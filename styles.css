@@ -733,8 +733,8 @@ body {
 	transition-timing-function: ease-in-out;
 }
 
-/*========= РЯД № 4 ============*/
-.row_4 {
+/*========= РЯД № 5 ============*/
+.row_5 {
 	/*border: 1px solid black;*/
 	padding: 0 0 45px 0; 
 }
@@ -744,7 +744,7 @@ body {
 	display: none;
 }
 
-.r_4_basket {
+.r_5_basket {
 	width: 100%;
 	min-height: 600px;
 	border: 1px solid rgba(255,255,255,0.7);
@@ -752,14 +752,14 @@ body {
 	font-size: 18px;
 }
 
-.r_4__products {
+.r_5__products {
 	display: flex;
 	justify-content: center;
 	margin: 0 auto;
 	padding: 20px 0 20px 0;
 }
 
-.r_4__products_card {
+.r_5__products_card {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -770,7 +770,7 @@ body {
 	box-shadow: 0 0 3px 0 black;
 }
 
-.r_4__products_card_img--features {
+.r_5__products_card_img--features {
 	max-width: 200px;
 	max-height: 200px;
 	margin-bottom: 10px;
@@ -779,7 +779,7 @@ body {
 	border-radius: 1%;
 }
 
-.r_4__products_buy {
+.r_5__products_buy {
 	margin-top: 15px;
 	width: 100px;
 	height: 30px;
@@ -789,25 +789,25 @@ body {
 	font-size: 15px;
 }
 
-.r_4__products_buy:hover {
+.r_5__products_buy:hover {
 	background-color: #FDF4E3;
 	transform: scale(1.005);
 }
 
 /*=== Корзина ===*/
-.r_4__basket {
+.r_5__basket {
 	border: 1px solid black;
 	padding: 15px;
 	max-width: 70%;
 	margin: 0 auto;
 }
 
-.r_4__basket_list {
+.r_5__basket_list {
 	list-style: none;
 	margin: 20px 0 0 20px;
 }
 
-.r_4__basket_element {
+.r_5__basket_element {
 	display: flex;
 	justify-content: space-evenly;
 	align-items: center;
@@ -817,20 +817,20 @@ body {
 	box-shadow: 0 0 1px 0 black, inset 0 0 1px 0 black;
 }
 
-.r_4__basket_product_foto {
+.r_5__basket_product_foto {
 	max-width: 70px;
 }
 
-.r_4__basket_product_about {
+.r_5__basket_product_about {
    min-width: 43%;
    text-align: center;
 }
 
-.r_4__basket_counter {
+.r_5__basket_counter {
 	display: flex;
 }
 
-.r_4__basket_vol {
+.r_5__basket_vol {
 	margin: 0 10px 0 10px;
 	background-color: #fff;
 	font-size: 20px;
@@ -839,17 +839,17 @@ body {
 	min-width: 30px;
 }
 
-.r_4__basket_volume {
+.r_5__basket_volume {
 	margin-top: 5px;
 	min-width: 20px;
 	text-align: center;
 }
 
-.r_4__basket_price {
+.r_5__basket_price {
 	min-width: 90px;
 }
 
-.r_4__basket_delete {
+.r_5__basket_delete {
 	width: 100px;
 	height: 30px;
 	background-color: #FFFFF0;
@@ -857,19 +857,19 @@ body {
 	border-radius: 1%;
 	font-size: 15px;
 }
-.r_4__basket_delete:hover {
+.r_5__basket_delete:hover {
 	background-color: #FDF4E3;
 	transform: scale(1.005);
 }
 
-.r_4__basket_total {
+.r_5__basket_total {
 	display: flex;
 	align-items: flex-end;
 	justify-content: flex-end;
 	font-weight: 700;
 }
 
-.r_4__basket_next {
+.r_5__basket_next {
 	width: 120px;
 	height: 30px;
 	background-color: #FFFFF0;
@@ -878,37 +878,37 @@ body {
 	margin: 25px 0 0 25px;
 	font-size: 15px;
 }
-.r_4__basket_next:hover {
+.r_5__basket_next:hover {
 	background-color: #FDF4E3;
 	transform: scale(1.005);
 }
 
 /*Ордер*/
 
-.r_4__order {
+.r_5__order {
 	margin: 25px auto;
 	border: 2px solid black;
 	max-width: 70%;
 }
 
-.r_4__order_info {
+.r_5__order_info {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	padding: 20px 0 20px 0;
 }
 
-.r_4__order_input {
+.r_5__order_input {
 	border: 1px solid black;
 	margin: 10px 0 0 0;
 	width: 20%;
 }
 
-.r_4__order_summ {
+.r_5__order_summ {
 	margin: 10px 0 0 0;
 }
 
-.r_4__order_pay {
+.r_5__order_pay {
 	margin-top: 15px;
 	width: 125px;
 	height: 43px;
@@ -918,7 +918,7 @@ body {
 	font-size: 15px;
 }
 
-.r_4__order_pay:hover {
+.r_5__order_pay:hover {
 	background-color: #FDF4E3;
 	transform: scale(1.005);
 }
