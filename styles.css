@@ -733,6 +733,177 @@ body {
 	transition-timing-function: ease-in-out;
 }
 
+/*========= РЯД № 4 ============*/
+/*Лист ТуДу на Vue js*/
+.row_4_toDo {
+	/*border: 1px solid black;*/
+	padding: 25px 50px 45px 0; 
+	font-family: 'Ubuntu', sans-serif;
+  	font-weight: 300;
+  	margin: 0 0 45px 0;
+  	width: 100%;
+  	border: 1px solid rgba(255,255,255,0.7);
+}
+
+.row_4_toDo__task {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 20px;
+  margin: 25px 0;
+  border-bottom: 1px solid black;
+}
+
+.row_4_toDo__mask-nummask_num {
+  border-radius: 20px;
+  border: 2px solid #2a2f36;
+  color: #2a2f36;
+  font-size: 14px;
+  font-weight: 700;
+  padding: 5px 10px;
+}
+
+.todo_container {
+  width: 800px;
+  margin: 0 auto;
+  padding: 0 15px;
+  margin-bottom: 10px;
+}
+
+.row_4_toDo__header {
+  background-color: rgba(3,3,3,0.7);
+  padding: 10px 0;
+  margin-bottom: 40px;
+  max-width: 70%;
+  margin: 0 auto;
+  border: 2px solid black;
+  border-radius: 1%;
+}
+
+.row_4_toDo__header .todo_container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.row_4_toDo__logo {
+  width: 100px;
+  line-height: 50px;
+  color: #ddd;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.row_4_toDo__form {
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.row_4_toDo__form_input {
+  width: calc(100% - 145px);
+  height: 40px;
+  text-indent: 10px;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  border-radius: 0;
+  box-sizing: border-box;
+  outline: none;
+  transition: 0.2s border;
+}
+
+.row_4_toDo__form_input:focus {
+  border: 1px solid #12c0dd;
+}
+
+.row_4_toDo__btn {
+  background-color: #12c0dd;
+  border: 1px solid #12c0dd;
+  color: #fff;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 10px 15px;
+  font-size: 12px;
+  height: 40px;
+  outline: none;
+  transition: 0.2s;
+}
+
+.row_4_toDo__btn:hover {
+  background-color: #0dd6f8;
+  border-color: #0dd6f8;
+}
+
+.row_4_toDo__element {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 34px;
+  line-height: 32px;
+  margin-bottom: 10px;
+  border-radius: 3px;
+  background-color: rgba(255,255,255,0.25);
+}
+
+.row_4_toDo__btn_remove {
+    border: 1px solid #2a2f36;
+    font-size: 12px;
+    border: 2px solid #2a2f36;
+    background-color: #333333;
+    color: #fff;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 5px 10px;
+    font-size: 12px;
+    outline: none;
+    transition: 0.2s;
+}
+
+.row_4_toDo__btn_remove:hover {
+  background-color: #535151;
+  border-color: #535151;
+}
+
+.row_4_toDo__checkbox {
+   position: absolute;
+   z-index: 1;
+   opacity: 0;
+   width: 120px;
+   height: 20px;
+   margin-top: 6px;
+}
+
+.row_4_toDo__task_text {
+   position: relative;
+   padding-left: 35px;
+}
+
+.row_4_toDo__task_text::before{
+   content:'';
+   position: absolute;
+   width: 16px;
+   height: 16px;
+   left:0;
+   top:calc(50% - 10px);
+   background-color: transparent;
+   border-radius: 2px;
+   border: 2px solid #5d575f;
+}
+.row_4_toDo__task_text::after{
+   content:'';
+   position: absolute;
+   width: 12px;
+   height: 12px;
+   transition: all .2s ease;
+   opacity: 0;
+   left: 4px;
+   top: calc(50% - 6px);
+   background-color: #7d25a9;
+}
+
+
+
+
 /*========= РЯД № 5 ============*/
 .row_5 {
 	/*border: 1px solid black;*/
