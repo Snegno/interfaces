@@ -759,7 +759,7 @@ body {
 	padding: 20px 0 20px 0;
 }
 
-.products__card {
+.r_4_basket__products_card {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -783,6 +783,7 @@ body {
 	background-color: #FFFFF0;
 	box-shadow: 0 0 2px 0.7px black;
 	border-radius: 1%;
+	font-size: 15px;
 }
 
 .products__buy:hover {
@@ -832,7 +833,7 @@ body {
 	font-size: 20px;
 	border: 1px solid black;
 	border-radius: 50%;
-	min-width: 25px;
+	min-width: 30px;
 }
 
 .basket__volume {
@@ -851,6 +852,7 @@ body {
 	background-color: #FFFFF0;
 	box-shadow: 0 0 2px 0.7px black;
 	border-radius: 1%;
+	font-size: 15px;
 }
 .basket__delete:hover {
 	background-color: #FDF4E3;
@@ -871,6 +873,7 @@ body {
 	box-shadow: 0 0 2px 0.7px black;
 	border-radius: 1%;
 	margin: 25px 0 0 25px;
+	font-size: 15px;
 }
 .basket__next:hover {
 	background-color: #FDF4E3;
@@ -880,8 +883,9 @@ body {
 /*Ордер*/
 
 .order {
-	margin: 25px 0 0 0;
+	margin: 25px auto;
 	border: 2px solid black;
+	max-width: 70%;
 }
 
 .order__info {
@@ -903,11 +907,12 @@ body {
 
 .order__pay {
 	margin-top: 15px;
-	width: 110px;
-	height: 30px;
+	width: 125px;
+	height: 43px;
 	background-color: #FFFFF0;
 	box-shadow: 0 0 2px 0.7px black;
 	border-radius: 1%;
+	font-size: 15px;
 }
 
 .order__pay:hover {
