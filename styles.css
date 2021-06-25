@@ -695,7 +695,7 @@ body {
 /*========= РЯД № 3 ============*/
 .row_3 {
 	/*border: 1px solid black;*/
-	padding: 45px 0 45px 0; 
+	padding: 45px 10px 45px 10px; 
 }
  /*==== Рисовалка на канвасе =================*/
 .r_3_paint {
@@ -705,6 +705,7 @@ body {
 	border: 1px solid rgba(255,255,255,0.7);
 	padding-bottom: 45px;
 }
+
 .r_3_paint__canvas {
 	margin: 50px 0 0 50px;
 	display: block;
@@ -712,6 +713,8 @@ body {
 	border-radius: 0.5%;
 	box-shadow: 0 0 8px 1px black;
 	background-color: white;
+	width: 78%;
+	height: 44rem;
 }
 .r_3_paint__control {
 	display: flex;
@@ -719,7 +722,7 @@ body {
 	margin: 70px 0 0 0;
 }
 .r3_paint__contr--b_all {
-	width: 150px;
+	width: 11rem;
 	height: 30px;
 	margin: 0 0 10px 0;
 	box-shadow: 0 0 4px 1px black;
@@ -764,7 +767,6 @@ body {
 }
 
 .todo_container {
-  width: 800px;
   margin: 0 auto;
   padding: 0 15px;
   margin-bottom: 10px;
@@ -1123,8 +1125,66 @@ body {
 	}
 }
 
+@media (max-width: 970px) {
+	.r_3_paint {
+		flex-wrap: wrap;
+	}
+	.r_3_paint__canvas {
+		margin: 10px 0 0 0;
+	}
+	.r_3_paint__control {
+		margin: 19px 0 0 0;
+	}
+	.r3_paint__contr--b_all {
+		max-width: 92%;
+		height: 2rem;
+	}
+	.r_5__products {
 
+	}
+	.r_5__products_card {
+		width: 30%;
+		margin-right: 3px;
+	}
+	.r_5__products_card_img--features {
+		width: 98%;
+	}
+	.r_2_gallery {
+		max-width: 66%;
+	}
+}
 
+@media (max-width: 580px) {
+	.to-do__tasks {
+		flex-direction: column;
+	}
+	.r_2_gallery__cards  {
+		width: 21%;
+	}
+	.r_2_gallery {
+		max-width: 33rem;
+		min-width: 0;
+	}
+	.row_2 {
+		padding: 10px;
+	}
+	.r_2_gallery__img {
+		min-width: 100%;
+	}
+	.r_2_gallery__cards {
+		margin: 1.5px 3px 1.5px 3px;
+		min-width: 110px;
+	}
+	.r_3_paint__canvas {
+		height: 30%;
+	}
+	.r_2_gallery__popup {
+	  	top: 61px;
+	  	left: -365px;
+	  	width: 136vh;
+	  	height: 78%;
+	  }
+}
 
 
 
